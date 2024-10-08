@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.fundo {
+    background-color: #EBD5D5;
+}
+.barrasup {
+    margin-top: 0vw;
+    text-align: center;
+    height: 9vw;
+    width: 100%;
+    display: flex;
+    background: -webkit-linear-gradient(90deg, #c41c1c 50%, #ff1616 50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -2;
+}
+
+.buttons {
+    height: 14vw;
+    width: 26vw;
+    margin-left: 52vw;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+a.butao {
+    text-decoration: none; color: white;
+}
+
+.hexagHM {
+    height: 6.6vw;
+    width: 6.6vw;
+    position: absolute;
+    top: -.3vw;
+    left: 70.5vw;
+}
+
+.hexagRP {
+    height: 6.6vw;
+    width: 6.6vw;
+    position: absolute;
+    top: 2.5vw;
+    left: 75.5vw;
+}
+
+.hexagSF {
+    height: 6.6vw;
+    width: 6.6vw;
+    position: absolute;
+    top: -0.3vw;
+    left: 80.5vw;
+}
+
+.hexagAT {
+    height: 6.6vw;
+    width: 6.6vw;
+    position: absolute;
+    top: 2.5vw;
+    left: 85.49vw
+}
+
+.logo {
+    height: 9vw;
+    width: 9vw;
+    position: absolute;
+    top: 0vw;
+    left: 2vw;
+}
+
+.techelp {
+    place-self: center;
+    position: absolute;
+    top: 3vw;
+    left: 12vw;
+    height: 2.5vw;
+}
+
+
+div.borda{
+    border-radius: 1vw;
+    background-color: white;
+    margin: 10vw;
+    margin-left: 29vw;
+    padding: 0.5vw;
+    text-align: center;
+    width: 40vw;
+    height: 23vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

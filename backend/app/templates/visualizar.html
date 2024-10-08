@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{%block title%}TECHELP - Visualizar Problemas{% endblock %}
+{% block content %}
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles_visualizar.css')}}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+
+
+</head>
+
+<!-- Aqui temos a tabela de visualização-->
+<div class='central'>
+    <h1>Problemas relatados</h1>
+    <form action="/visualizar" method="POST" class="filter">
+        <select type="text" id="statusId" name="status" class="att-input">
+            <option value="Todos">Todos</option>
+            <option value="Pendente">Pendentes</option>
+            <option value="Em andamento">Em andamento</option>
+            <option value="Finalizado">Finalizados</option>
+            <option value="Cancelado">Cancelados</option>
+        </select>
+        <input type="submit" id="Enviar" value="Filtrar" class="att-enviar">
+
+        <script type="text/javascript">
+            document.getElementById('statusId').value = "<?php echo $_POST['status'];?>";
+        </script>
+
+    </form>
+
+    <!-- Aqui tem um for para conseguir colocar na tabela somente as informações da cada campo não o banco em formato de lista-->
+    <div class="l-cards">
+        
+        {% for i in tabela %}
+        
+        <article class="c-card">
+            <div class="card-content">
+                <h3>ID #{{i[0]}}</h3>
+                <div>
+                    <h4 class="card-info">Data: {{i[5]}}</h4>
+                    <h4 class="card-info">Laboratório: {{i[8]}}</h4>
+                    <h4 class="card-info">Computador: {{i[9]}}</h4>
+                    <h4 class="card-info">Problema: {{i[2]}}</h4>
+                    <h4 class="card-info">Status: {{i[4]}}</h4>
+                    <a class="card-vermais" href='/ver_mais/{{i[0]}}'>
+                        <h4 class="card-vermais">Ver Mais</h4>
+                    </a>
+                    {% if current_user.is_authenticated %}
+                    <a class="btn del btn-danger" href='/deletar/{{i[0]}}'><i class="bi bi-trash"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+<div class="porta-grafico">
+
+    <div class="chart">
+        <canvas id="myChart"></canvas>
+        <canvas id="myChart1"></canvas>
+        <canvas id="myChart2"></canvas>
+        <canvas id="myChart3"></canvas>
+    </div>
+    
+</div>
+<!-- JS dos gráficos -->
+<script src="../static/js/graph.js"></script>
+<script>
+    // Criar gráficos
+        var tabela = {{tabela|tojson}}
+        graficozao(tabela, "myChart", 2)
+        graficozao(tabela, "myChart1", 8)
+        graficozao(tabela, "myChart2", 5)
+        graficozao(tabela, "myChart3", 4)
+        
+</script>
+{% endblock %}

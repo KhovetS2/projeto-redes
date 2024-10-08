@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{%block title%}TECHELP - Selecione o Computador{% endblock %}
+{% block content %}
+<style>
+    .pc {cursor: pointer;transition: transform .2s;}
+    .pc:hover {filter: drop-shadow(0px 2px 10px #0C0C0C);}
+    .mesa {cursor: auto;}
+    .porta1 {cursor: auto;}
+    .quadrobranco {cursor: auto;}
+    .server {cursor: auto;}
+  </style>
+  <body>
+    <main>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/edit.css') }}">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/Lab_Main.css')}}">
+      <section class="lab_geral">
+        <container class="local1 local">
+          <div class="rotulo">Laboratório {{lab}}</div>
+          <center>
+            <div class="editarea">
+              <div class="pctablemaster">
+                {% for row in elmnts %}
+                {% if 'class="pc"' in row[2] %}
+ 
+                  <span class="chamado_existente">
+                    <a class="nomePc" href="/{{row[1]}}/{{row[0]}}/seleção_problemas">{{row[2] |safe}}</a>
+                  </span>
+                {% else %}
+                <p>{{row[2] |safe}}</p>
+                {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+            </center>
+          </container>
+          
+      </section>
+    </main>
+  </body>
+{% endblock %}

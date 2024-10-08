@@ -1,0 +1,68 @@
+.inplogin {
+    font-size: 1.75vw;
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text1{
+    top: 24vw;
+    left: 46vw;
+}
+.text2{
+    top: 31vw;
+    left: 46vw;
+}
+
+.inp{
+    width: 20vw;
+    height: 1vw;
+    position: absolute;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 1.25vw;
+    bottom: 0.5vw;
+    background-color: #E4E1E1;
+    border-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.inp1{
+    top: 27vw;
+    left: 39vw;
+}
+.inp2{
+    top: 33.5vw;
+    left: 39vw;
+}
+
+.inpsub{
+    width: 10vw;
+    height: 2vw;
+    position: absolute;
+    top: 37vw;
+    left: 43.5vw;
+    border-radius: 1vw;
+    font-size: 1.25vw;
+    background-color: #E4E1E1; 
+    border-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inpsub:hover{
+    background-color: #c7c7c7;
+    cursor:pointer;
+}
+
+div.borda{
+    border-radius: 1vw;
+    background-color: white;
+    margin: 10vw;
+    margin-left: 29vw;
+    padding: 0.5vw;
+    text-align: center;
+    width: 40vw;
+    height: 23vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tituloTecnico{
+    font-size: 2.5vw;
+}

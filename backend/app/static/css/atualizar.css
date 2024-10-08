@@ -1,0 +1,100 @@
+.container {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    display: grid;
+    box-shadow: 3px 5px rgb(50, 50, 30);
+}
+
+.att-display-input {
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+
+.att-display-descri {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.att-display-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.att-input {
+    width: 15rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgb(210, 210, 210);
+    padding: 0.5rem;
+}
+
+.centraliza_description{
+    display: flex;
+    margin: 1rem auto;
+}
+.usuario .att-input{
+    padding: 0.8rem;
+    margin: 0;
+    height: 4rem;
+    border: 0.2rem solid black;
+}
+
+.usuario .att-description{
+    padding:1rem;
+    width: 20rem;
+    border: 0.2rem solid black;
+}
+.att-description {
+    width: 15rem;
+    height: 14rem;
+    text-align: justify;
+    border-radius: 1rem;
+    background-color: rgb(210, 210, 210);
+    padding: 0.5rem;
+}
+
+.att-enviar {
+    background-color: #FF1616;
+    border-radius: 50px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+    font-weight: 500;
+    height: 70px;
+    line-height: 20px;
+    list-style: none;
+    margin: 11rem 0 0 7.5rem;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.att-enviar:hover {
+    background-color: #ce1111;
+}

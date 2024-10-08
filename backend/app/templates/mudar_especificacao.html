@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{%block title%}TECHELP - Contato{% endblock %}
+{% block content %}
+
+<!-- Página HTML criada para mudar todos os computadores de cada sala com um único comando -->
+
+
+<form method="POST">
+    <p>
+        S.O.:
+        <input type="text" name="sistema_operacional" id="sistema_operacional">
+    </p>
+
+    <p>
+        Processador:
+        <input type="text" name="processador" id="processador">
+    </p>
+
+    <p>
+        RAM:
+        <input type="text" name="ram" id="ram">
+    </p>
+
+    <select class="salalist" name="salalist" id="salalist">
+        {% for lab in labs %}
+            {% if selected == lab: %}
+                <option value="{{lab}}" selected> {{lab}} </option>
+            {% else %}
+                <option value="{{lab}}"> {{lab}} </option>
+            {% endif %}
+        {% endfor %}
+    
+    </select>
+
+    <input type="submit">
+</form>
+
+
+
+
+{%endblock%}

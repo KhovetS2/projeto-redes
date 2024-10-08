@@ -1,0 +1,152 @@
+{% extends 'base.html'%}
+{%block title%}Seleção de Problemas{% endblock %}
+{% block content %}
+
+<!-- Caso esteja logado, podendo editar -->
+{% if current_user.is_authenticated %}
+
+<form action="especificacao" class ="" method="post">
+    <div class="compos">
+        <img src="{{url_for('static', filename='img/computador.png')}}" alt="computador" class="computador">
+    </div>
+    <div class="">
+        
+        <div class="paozinho1">
+                <p class="fonte nome123">Nome: <p class="fonte nome12 subclasse padinzin">{{comp.Object_compname}}</p></p>
+                <p class="fonte local12">Local: <p class="fonte local13  subclasse padinzin">{{comp.Object_lab}}</p></p>
+                <p class="fonte local19">S.O.:</p>
+                <p><input type="text" value="{{comp.Object_comp_operational_system}}" name="sistema_operacional" class="fonte padinzin local20 subclasse"></p>    
+
+                <p class="fonte local14">Processador:</p>
+                <input type="text" value="{{comp.Object_comp_processor}}" name="processador" class="fonte local15 subclasse padinzin">
+                <p class="fonte local16">RAM:</p>
+                <input type="text" value="{{comp.Object_comp_RAM}}" name="ram" class="fonte local17 subclasse padinzin">
+                <input type="submit" class="fonte local18 subclasse1 padinzin">
+        </div>
+    </div>
+</form>
+<div class="espaçonessaporra"></div>
+<!-- Caso não esteja logado ** PARTE DA JOYCE **-->
+{% else %}
+<section>
+        <div class="compos">
+            <img src="{{url_for('static', filename='img/computador.png')}}" alt="computador" class="computador">
+        </div>
+            <div class="dados fonte">
+                <p class="nome">Nome:</p> 
+            <div class="EsNome inputBase2 padinzin">
+                <p>{{comp.Object_compname}}</p>
+            </div>
+                <p class="l">Local:</p>
+            <div class=" ll inputBase2 padinzin">
+                <p>{{comp.Object_lab}}</p>
+            </div>
+                <p class="so">S.O.:</p>
+            <div class="sso inputBase2 padinzin">
+                <p>{{comp.Object_comp_operational_system}}</p>
+            </div>
+                <p class="processador">Processador:</p>
+            <div class="pr inputBase2 padinzin">
+                <p>{{comp.Object_comp_processor}}</p>
+            </div>
+                <p class="ram">RAM:</p>
+            <div class=" rm inputBase2 padinzin">
+                <p>{{comp.Object_comp_RAM}}</p>
+            </div>
+
+        </div>
+</section>
+<div class="espaçonessaporra"></div>
+{% endif %}
+
+    <!-- Botão Software -->
+<div class="centro">
+    <a href="#" id="botão-software">
+        <label for="problem1">
+            <h1 class="software">Software</h1>
+        </label>
+        <input id="problem1" class="software" name="problem" style="visibility: hidden;" value='Software'
+            class="esconde" onclick="descrição()" type="radio" form="form2">
+    </a>
+    <hr class="linha" align="left" color="#555555">
+    <svg xmlns="http://www.w3.org/2000/svg" class="circuloE">
+        <span class="dot circuloE"></span>
+    </svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="circuloD">
+        <span class="dot circuloD"></span>
+    </svg>
+
+    <img class="tipobut" src="{{ url_for('static', filename='img/TipoBut.png') }}" alt="logo">
+ 
+    <!-- Botão Hardware -->
+    <a href="#" id="botão-hardware">
+        <h1 class="hardware">Hardware</h1>
+    </a>
+</div>
+<!-- Modais -->
+<div class="bg-modal">
+    <!-- Modal Hardware -->
+    <div class="modal-content-hardware">
+        <div class="close" onclick="fechar()">+</div>
+        <h1 class="titulo">Hardware</h1>
+        <div class="lista-botão-A">
+            <div class="lista-botão-B">
+                <!-- a função descrição leva até o modal de descrição -->
+                <form action="seleção_problemas" method="POST" id="form2">
+                    <div class="problema-botão">
+                        <input id="problem1" name="problem" value='Sem cabo de rede' class="esconde"
+                            onclick="descrição()" type="radio">
+                        <label for="problem1" class="paodebatata">Sem cabo de rede</label><br>
+                    </div>
+                    <div class="problema-botão">
+                        <input id="problem2" name="problem" value='Teclado não funciona' class="esconde"
+                            onclick="descrição()" type="radio">
+                        <label for="problem2" class="paodebatata">Teclado não funciona</label><br>
+                    </div>
+                    <div class="problema-botão">
+                        <input id="problem3" name="problem" value='Monitor não funciona' class="esconde"
+                            onclick="descrição()" type="radio">
+                        <label for="problem3" class="paodebatata">Monitor não funciona</label><br>
+                    </div>
+                    <div class="problema-botão">
+                        <input id="problem4" name="problem" value='Computador não liga' class="esconde"
+                            onclick="descrição()" type="radio">
+                        <label for="problem4" class="paodebatata">Computador não liga</label><br>
+                    </div>
+                    <div class="problema-botão">
+                        <input id="problem5" name="problem" value='Sem cabo de energia' class="esconde"
+                            onclick="descrição()" type="radio">
+                        <label for="problem5" class="paodebatata">Sem cabo de energia</label><br>
+                    </div>
+                    <div class="problema-botão">
+                        <input id="problem6" name="problem" value='Outros' class="esconde" onclick="descrição()"
+                            type="radio">
+                        <label for="problem6" class="paodebatata">Outros</label><br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Descrição -->
+    <div class="modal-content-descrição">
+        <div class="close" onclick="fechar()">+</div>
+
+        <h1 class="titulo">Conte-nos sobre seu problema</h1>
+
+        <div>
+            <!-- a função obrigado leva até o modal de obrigado -->
+            <textarea name="description" id="dedssdfsdf" class="descrição" cols="30" rows="6"
+                placeholder="Descrição...." form="form2"></textarea>
+
+        </div>
+        <div class="botão">
+            <!-- a função obrigado leva até o modal de obrigado -->
+            <button class='btnn' form="form2" type="submit" onclick="obrigado()">Enviar</button>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

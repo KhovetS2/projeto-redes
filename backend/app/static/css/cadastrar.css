@@ -1,0 +1,79 @@
+.inpcadastro{
+    font-size: 1.75vw;
+    position: absolute;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inp{
+    width: 20vw;
+    height: 1vw;
+    position: absolute;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 1.25vw;
+    bottom: 0.5vw;
+    background-color: #E4E1E1;
+    border-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inp-name{
+    top: 24vw;
+    left: 39vw;
+}
+
+.inp-email{
+    top: 30.4vw;
+    left: 39vw;
+}
+
+.inp-senha{
+    top: 36.7vw;
+    left: 39vw;
+}
+
+.name{
+    top: 21.5vw;
+    left: 44vw;
+}
+
+.email{
+    top: 28vw;
+    left: 45vw;
+}
+
+.senha{
+    top: 34vw;
+    left: 45.5vw;
+}
+
+
+.bordacadastro{
+    border-radius: 1vw;
+    background-color: white;
+    margin: 5vw;
+    margin-left: 29vw;
+    padding: 0.5vw;
+    text-align: center;
+    width: 40vw;
+    height: 34vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.h1cadastro{
+    font-size: 2.5vw;
+}
+
+
+.inpsub {
+    position: absolute;
+    width: 11vw;
+    height: 2vw;
+    top: 42vw;
+    left: 43vw;
+    border-radius: 1vw;
+    font-size: 1.25vw;
+    background-color: #E4E1E1;
+    border-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

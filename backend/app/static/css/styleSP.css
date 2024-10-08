@@ -1,0 +1,723 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.fundo {
+    background-color: #EBD5D5;
+}
+
+
+.centro {
+    height: 50vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 25vw;
+}
+.espaçonessaporra{
+    margin-bottom: 7vw;
+}
+
+.tipobut{
+    height:37.1vw;
+    width:37vw;
+    position: absolute;
+    top: 6.5vw;
+    left: 31vw;
+}
+.software {
+    position: absolute;
+    left: 3.6vw;
+    font-size: 4vw;
+    top: 22.5vw;
+    color: #555555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.esconde {
+    visibility: hidden;
+}
+
+.computador {
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+
+.compos {
+    position: absolute;
+    top: 11vw;
+    left: 24vw;
+}
+
+.radio {
+    background-color: #555555;
+}
+
+.hardware {
+    position: absolute;
+    left: 81vw;
+    top: 22.5vw;
+    font-size: 4vw;
+    color: #555555;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.hardware:hover,.software:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.paodebatata:hover {
+    cursor: pointer;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.linha {
+    z-index: -1;
+    position: absolute;
+    width:55vw;
+    size: 2vw;
+    border: 1vw solid #555555;
+}
+
+.dados {
+    text-align: center;
+    margin: 2vw;
+    margin-top: 4vw;
+    margin-bottom: -4vw;
+
+}
+
+.circuloE {
+    fill: #555555;
+    left: 20vw;
+    top: 23vw;
+}
+
+.circuloD {
+    fill: #555555;
+    left: 77vw;
+    top: 23vw;
+}
+.fonte{
+ font-size: 1.5vw;
+}
+
+.dot {
+    height: 4vw;
+    width: 4vw;
+    background-color: #555555;
+    border-radius: 50vw;
+    position: absolute;
+    display: inline-block;
+  }
+
+.paozinho1{
+    position: absolute;
+    top: 12vw;
+    left: 36vw;
+    margin: 0%;
+
+}
+.subclasse{
+    background-color: #E4E1E1;
+    border-radius: 1vw;
+    text-align: center;
+    border: 0.1vw solid black;
+    padding: 0.2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 15vw;
+    height: 2vw;
+}
+.subclasse1{
+    background-color: #E4E1E1;
+    border-radius: 1vw;
+    border-width: 0.1vw;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 6vw;
+    height: 2vw;
+}
+
+.subclasse1:hover {
+    background-color: #cacaca;
+}
+
+.flutadireita{
+    float: right;
+}
+
+.padinzin{
+    padding: 0vw;
+}
+
+.nome123{
+    position: absolute;
+    top: 0.3vw;
+    left: 5vw;
+    margin: 0%;
+}
+
+.nome12{
+    position: absolute;
+    top: 0.5vw;
+    left: 11vw;
+    margin: 0%;
+}
+
+.local12{
+    position: absolute;
+    top: 0.3vw;
+    left: 27vw;
+    margin: 0%;
+}
+
+.local13{
+    position: absolute;
+    top: 0.5vw;
+    left: 32vw;
+    margin: 0%
+}
+
+.local14{
+    position: absolute;
+    top: 7.1vw;
+    left: 1vw;
+    margin: 0%;
+}
+.local15{
+    position: absolute;
+    top: 7.5vw;
+    left: 11vw;
+    margin: 0%;
+}
+.local16{
+    position: absolute;
+    top: 7.5vw;
+    left: 27vw;
+    margin: 0%;
+}
+.local17{
+    position: absolute;
+    top: 7.5vw;
+    left: 32vw;
+    margin: 0%;
+}
+.local18{
+    position: absolute;
+    top: 7.5vw;
+    left: 48vw;
+    margin: 0%;
+}
+.local19{
+    position: absolute;
+    top: 3.7vw;
+    left: 17vw;
+    margin: 0%;
+}
+.local20{
+    position: absolute;
+    top: 3.9vw;
+    left: 21vw;
+    margin: 0%;
+}
+
+.inputNome {
+    margin-right: 1vw;
+}
+
+.inputProcessador {
+    margin-right: 1vw;
+}
+
+.inputBase2 {
+    background-color: #E4E1E1;
+    border-radius: 1vw;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 15vw;
+    height: 2vw;
+}
+
+
+.nome {
+    top: 13.1vw;
+    left: 43.5vw;
+    position: absolute;
+}
+
+.EsNome {
+    top: 13.5vw;
+    left: 49.5vw;
+    position: absolute;
+    border: 0.1vw solid black;
+}
+
+.l {
+    left: 70.5vw;
+    top: 13.1vw;
+    position: absolute;
+}
+
+.ll {
+    border: 0.1vw solid black;
+    left: 76vw;
+    top: 13.5vw;
+    position: absolute;
+
+
+}
+
+.so {
+    left: 53.5vw;
+    top: 16.7vw;
+    position: absolute;
+}
+
+.sso {
+    border: 0.1vw solid black;
+    left: 58.5vw;
+    top: 16.9vw;
+    position: absolute;
+
+}
+
+.processador {
+    left: 39.5vw;
+    top: 20.1vw;
+    position: absolute;
+}
+
+.pr {
+    border: 0.1vw solid black;
+    left: 49.5vw;
+    top: 20.5vw;
+    position: absolute;
+
+}
+
+.ram {
+    left: 70.5vw;
+    top: 20.1vw;
+    position: absolute;
+}
+
+.rm {
+    border: 0.1vw solid black;
+    left: 76vw;
+    top: 20.5vw;
+    position: absolute;
+
+}
+
+
+.pos1 {
+    display: flex;
+    left: 38.5vw;
+    top: 17.1vw;
+    position: absolute;
+}
+
+.pos2 {
+    display: flex;
+    left: 38.5vw;
+    top: 17.1vw;
+    position: absolute;
+
+}
+
+.pos3 {
+    display: flex;
+    left: 38.5vw;
+    top: 17.1vw;
+    position: absolute;
+}
+
+
+
+
+
+.butTxt {
+    text-align: center;
+    color: #A90405;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10mm;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    margin-top: -170px;
+    width: 200px;
+    margin-left: 25px;
+}
+
+.inputBase {
+    background-color: #E4E1E1;
+    border-radius: 1vw;
+    text-align: center;
+    border-width: 0.5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 15vw;
+    height: 2vw;
+}
+
+.inputSo {
+    margin-left: 7.8vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.EsLocal {
+    margin-left: 15.9vw;
+    margin-top: -2vw;
+    border: 0.1vw solid black;
+
+}
+
+.EsSo {
+    margin-left: 7.8vw;
+    margin-top: 1vw;
+    border: 0.1vw solid black;
+
+}
+
+.EsProcessador {
+    margin-top: 1.5vw;
+    border: 0.1vw solid black;
+
+}
+
+.EsRam {
+    margin-left: 15.9vw;
+    margin-top: -2vw;
+    border: 0.1vw solid black;
+
+}
+
+.Txt {
+    text-align: center;
+    color: #A90405;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10mm;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    margin-top: -170px;
+    width: 200px;
+    margin-left: 25px;
+}
+
+.TxtHM {
+    text-align: center;
+    color: #A90405;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4mm;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    width: 40px;
+    margin-top: -52px;
+    margin-left: 18px;
+}
+
+.TxtRP {
+    text-align: center;
+    color: #A90405;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.58mm;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    height: 77px;
+    width: 77px;
+    margin-top: -59px;
+    margin-left: 3.5px;
+    background-image: url(../static/img/RelatarBut.svg);
+    background-repeat: no-repeat;
+    background-size: 77px;
+
+}
+
+.TxtSF {
+    text-align: center;
+    color: #A90405;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.8mm;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    width: 50px;
+    margin-top: -59px;
+    margin-left: 13.5px;
+}
+
+.TxtAT {
+    text-align: center;
+    color: #A90405;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.8mm;
+    text-decoration: none;
+    position: absolute;
+    display: flex;
+    width: 60px;
+    margin-top: -59px;
+    margin-left: 8px;
+}
+
+.hexag {
+    height: 85px;
+    width: 85px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+/* Funcionamento do modal */
+.bg-modal {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+/* Modal Hardware / ... */
+/* Conteúdo */
+.modal-content-hardware {
+    width: 40vw;
+    height: 31vw;
+    background-color: white;
+    text-align: center;
+    padding: 1vw;
+    position: relative;
+    border-radius: 1vw;
+    display: none;
+}
+
+.modal-content-mensagem {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    border: 0.1rem solid black;
+    border-radius: 1vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 5;
+}
+
+
+.titulo {
+    font-family: 'Trebuchet MS';
+    color: rgb(40, 40, 40);
+    text-decoration: underline;
+    text-align: center;
+}
+.flashes{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.lista-botão-A {
+
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 9%;
+    font-family: 'Trebuchet MS';
+    text-decoration-color: rgb(212, 212, 212);
+}
+
+.lista-botão-B {
+    margin-top: -3vw;
+}
+
+.problema-botão {
+    border-radius: 2vw;
+    padding: 0.55vw;
+    width: 35vw;
+    font-family: 'Trebuchet MS';
+    font-size: 1.6vw;
+    cursor: pointer;
+    margin: 0.5vw;
+    margin-top: -0.1vw;
+    margin-right: 30vw;
+    margin-left: -8vw;
+    border: none;
+    background-color: rgb(212, 212, 212);
+}
+
+.problema-botão:hover{
+    background-color: rgb(180, 180, 180);
+}
+
+/* Modal Descrição */
+/* Conteúdo */
+.modal-content-descrição {
+    width: 50vw;
+    height: 32vw;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 1vw;
+    display: none;
+}
+
+.botão {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 9%;
+    font-family: 'Trebuchet MS';
+    text-decoration-color: rgb(212, 212, 212);
+}
+
+.btnn {
+    width: 10vw;
+    height: 4vh;
+    border-radius: 1vw;
+    border: none;
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+    margin-top: 0vw;
+    font-size: 1.2vw;
+}
+
+.btnn:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.descrição {
+    resize: none;
+    padding: 1vw;
+    border-radius: 1vw;
+    text-align: justify;
+    font-family: 'Trebuchet MS';
+    font-size: 2vw;
+    border: none;
+    width: 46vw;
+    height: 19vw;
+    background-color: rgb(212, 212, 212);
+    margin-top: 0.5vw;
+    margin-bottom: -2vw;
+}
+
+/* Modal Obrigado */
+/* Conteúdo */
+
+.modal-content-obrigado {
+    width: 50vw;
+    height: 32vw;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 1vw;
+    display: none;
+}
+
+.título-obg {
+    font-family: 'Trebuchet MS';
+    color: rgb(40, 40, 40);
+    text-decoration: underline;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 10px
+}
+
+.sub-obg {
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    color: rgb(40, 40, 40);
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.botãoobg {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 9%;
+    font-family: 'Trebuchet MS';
+    text-decoration-color: rgb(212, 212, 212);
+    justify-content: center;
+    display: flex;
+}
+
+.nn {
+    width: 200px;
+    border-radius: 1vw;
+    border: none;
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+    margin-top: 1.5vw;
+    margin-left: 5vw;
+    margin-right: 1.5vw;
+    font-size: 25px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    padding-block: 25px;
+    font-family: 'Trebuchet MS';
+}
+
+.nn2 {
+    width: 200px;
+    border-radius: 1vw;
+    margin: 1.5vw;
+    border: none;
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+    margin-top: 1.5vw;
+    margin-right: 5vw;
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    padding-block: 25px;
+    font-family: 'Trebuchet MS';
+}
+
+/* Botão de Fechar */
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 45px;
+    transform: rotate(45deg);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+

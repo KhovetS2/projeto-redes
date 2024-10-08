@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{%block title%}TECHELP - Selecione o Laboratório{% endblock %}
+{% block content %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Portas_Main.css')}}">
+      <section class="container_geral">
+        <container class="local">
+          <div class="rotulo">Selecione o Laboratório</div>
+
+            <!--fileiras 1-->
+            <div class="fileiras" id="fileira 01">
+              {% for item in labs %}
+              <div class="laboratorio_layout">
+                <a href="/laboratorio/{{item}}">
+                <card class="porta" id="{{item}}">
+                  <div class="texto_central">{{item}}</div>
+                </card>
+                </a>
+              </div>
+              {% endfor %}
+            </div>
+            
+          </container>
+      </section>
+
+{% endblock %}

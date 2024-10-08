@@ -1,0 +1,48 @@
+@import url(/static/css/cardM.css);
+@import url(/static/css/headerM.css);
+
+  
+.lab_geral{
+  justify-content: center;
+  align-items:center;
+  margin-top: 2vw;
+  display: grid;
+  }
+
+
+.local1 {
+  padding: 1vw;
+  background-color: rgb(216, 216, 216);
+  border: 5px solid black;
+  border-radius: 1vw;
+  margin-top:2vw;
+ }
+
+ .rotulo{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+  color: black;
+  font-size: 3vw;
+  text-align: center;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+  }
+
+.container_layout {
+  justify-content:space-between;
+  display: grid;
+  width: 100%;
+  grid-template-columns:auto;
+  grid-template-columns: max-content;
+  grid-column-gap: 5em;
+  row-gap: 1em;
+  border-radius: 20px;
+  margin-top: 10px;
+ }
+
+ 
+.nomePc{
+  color: black;
+}
+.nomePc:hover{
+  color: black
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+
+<body>
+    <div class="borda">
+        <section>
+        <h1 class="obrigado">
+            Obrigado!
+        </h1>
+        </section>
+
+        <section>
+        <p class="obrigado">
+            Seu problema já foi relatado e será solucionado em breve por um de nosso técnicos.
+        </p>
+        </section>
+    </div>
+</body>
+
+{% endblock %}
+

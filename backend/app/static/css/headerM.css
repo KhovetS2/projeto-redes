@@ -1,0 +1,35 @@
+/*reset*/ 
+body, ul, li,
+p{
+ margin:0px;
+ padding: 0px;
+ font: size 1.2rem;
+ font-family: Arial;
+ list-style: none;
+}
+
+ a{
+ text-decoration: none;
+ color: aliceblue;
+ }
+
+ .header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(10, 10, 112, 0.783);    
+ }
+
+.Menu{
+   display: flex;
+  }
+.Menu li{
+  margin-left: 10px;
+ }
+
+.Menu a{
+  display: block;
+  padding: 20px;
+ }

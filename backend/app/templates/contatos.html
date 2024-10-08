@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{%block title%}TECHELP - Contato{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+
+<body>
+    <div class="borda">
+        <section>
+        <h1 class="obrigado">
+            Contatos
+        </h1>
+        </section>
+
+        <section>
+        <p class="contatos">
+            <b>Secretaria acadêmica:</b> 
+            <br> 
+            E-mail: f146.secretaria@fatec.sp.gov.br
+            <br>
+            Telefone: (12) 3905-2423 e (12) 3905-4699
+            <br>
+        </p>
+        <p class="contatos">
+            <b>Suporte de Informática:</b>
+            <br>
+            Email: f146.suportesjc@fatec.sp.gov.br
+        </p>
+        </section>
+    </div>
+</body>
+
+{% endblock %}

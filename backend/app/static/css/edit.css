@@ -1,0 +1,240 @@
+    .mesa {
+        background-color: rgb(247, 226, 195);
+        position: absolute;
+        border: 1px solid #DDDDDD;
+        z-index: 2;
+        cursor: -webkit-grab; cursor: grab;
+        resize: none;
+        overflow: auto;
+	}
+    .mesa:active {
+    	cursor: -webkit-grabbing; cursor: grabbing;
+    }
+    .quadrobranco {
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        border: 2px solid #000000;
+        border-radius: 5px;
+        z-index: 2;
+        cursor: -webkit-grab; cursor: grab;
+        resize: none;
+        overflow: auto;
+        font-family: sans-serif;
+        font-weight: 1000;
+        text-align: center;
+	}
+    .quadrobranco:active {
+    	cursor: -webkit-grabbing; cursor: grabbing;
+    }
+    
+    .porta1 {
+        position: absolute;
+        border: 1px solid #DDDDDD;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: -webkit-grab; cursor: grab;
+        resize: none;
+        overflow: auto;
+	}
+    .porta1:active {
+    	cursor: -webkit-grabbing; cursor: grabbing;
+    }
+    .server {
+        position: absolute;
+        border: 1px solid #DDDDDD;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: -webkit-grab; cursor: grab;
+        resize: none;
+        overflow: auto;
+	}
+    .server:active {
+    	cursor: -webkit-grabbing; cursor: grabbing;
+    }
+    .pc {
+        font-family: "Monaco", monospace;
+        font-weight: 750;
+    	position: absolute;
+        display: inline;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 3;
+        cursor: -webkit-grab; cursor: grab;
+        resize: none;
+        overflow: auto;
+    }
+    .pc:active {
+    	cursor: -webkit-grabbing; cursor: grabbing;
+    }
+    
+    .editsize {
+    	
+        margin-top: 1vh;
+        width: 100%;
+        text-align: center;
+        height: 10vh;
+        font-weight: 750;
+        z-index: 10;
+        padding-top: 0vh;
+        border-radius: 5px;
+        user-select: none;
+    }
+    .editclass {
+        
+        margin-top: 1vh;
+        margin-bottom: 0vh;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        height: 8vh;
+        font-weight: 750;
+        z-index: 10;
+        padding-top: 0;
+        user-select: none;
+    }
+    .edittxt {
+        margin-top: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 1.5vw;
+        padding-left: 1vw;
+        user-select: none;
+        text-align: center;
+    }
+    .pcbutton, .portabutton, .quadrobutton, .serverbutton, .mesabutton, .resize, .delete, .edit, .clone, .adicionar, .carregar, .salvar, .deletar,.retirarBorda, .admin {
+        font-family: "Lucida Grande", monospace;
+        font-size: 3vh;
+        font-weight: 1000;
+        padding: 0.1vw;
+        padding-left: 0.3vw;
+        user-select: none;
+        color: #000000;
+    }
+    .pcbutton:hover,.portabutton:hover, .quadrobutton:hover, .serverbutton:hover, .mesabutton:hover, .resize:hover, .delete:hover, .copy:hover, .clone:hover, .adicionar:hover, .carregar:hover, .salvar:hover, .deletar:hover, .admin:hover,.retirarBorda:hover, .edit:hover {
+        color: #666666;
+		cursor: pointer;
+    }
+    .pcbutton:active, .mesabutton:active,.portabutton:active, .quadrobutton:active, .serverbutton:active, .resize:active, .delete:active, .copy:active, .clone:active, .adicionar:active, .carregar:active, .salvar:active,.retirarBorda:active, .deletar:active, .admin:active, .edit:active {
+        color: #BBBBBB;
+    }
+    .txtx0, .txty0, .txtx1, .txtrotate,  .txty1 {
+        width: 7vw;
+        font-family: "Lucida Grande", monospace;
+        font-size: 2vh;
+        font-weight: 750;
+        background-color: #FFFFFF;
+        border: 3px solid #000000;
+        border-radius: 10px;
+        user-select: none;
+    }
+    .txtnew {
+        width: 4.2vw;
+        height: 4.2vh;
+        font-family: "Lucida Grande", monospace;
+        font-size: 2vh;
+        margin: 0;
+        margin-bottom: 0.1vw;
+        font-weight: 750;
+        background-color: #FFFFFF;
+        border: 3px solid #000000;
+        border-radius: 10px;
+        user-select: none;
+    }
+    .salalist {
+        width: 4.2vw;
+        height: 4.2vh;
+        margin: 0;
+        margin-bottom: 0.1vw;
+        font-family: "Lucida Grande", monospace;
+        font-size: 2vh;
+        font-weight: 750;
+        background-color: #FFFFFF;
+        border: 3px solid #000000;
+        border-radius: 10px;
+    }
+    .txtname {
+        width: 5vw;
+        font-family: "Lucida Grande", monospace;
+        font-size: 2vh;
+        font-weight: 750;
+        background-color: #FFFFFF;
+        border: 3px solid #000000;
+        border-radius: 10px;
+    }
+    .txtid, .txtname:disabled {
+        width: 5vw;
+        font-family: "Lucida Grande", monospace;
+        font-size: 2vh;
+        font-weight: 750;
+        background-color: #d8d8d8;
+        border: 3px solid #000000;
+        border-radius: 10px;
+    }
+    .editarea {
+        position: absolute;
+        top: 250px;
+        left: 20px;
+        right: 20px;
+        bottom: 200px;;
+        margin: 1vh auto;
+        width: 1200px;
+        height: 800px;
+        background-color: #ffffff;
+        border: 3px solid #000000;
+        overflow: hidden;
+    }
+
+    .local {
+        width: 1400px;
+        height: 980px;
+    }
+
+    .innertext {
+		font-size: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .editobj {
+        position: fixed;
+        top: calc(47.5vh - 300px);
+        left: calc(50vw - 500px);
+        width: 1000px;
+        height: 600px;
+        font-weight: 750;
+        z-index: 10;
+        background-color: #EEEEEE;
+        border: 1px solid #DDDDDD;
+        user-select: none;
+        z-index: 10;
+    }
+    .botão1{
+        text-align: center;
+        border: 3px solid #000000;
+        border-radius: 14px;
+        background-color: #E4E1E1;
+        padding: 0.1vw;
+        display: inline-block;
+        margin: 0.2vw;
+    }
+
+    .conteudo1{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        border: 3px solid #000000;
+        border-radius: 14px;
+        padding: 1vw;
+        background-color: #EBD5D5;
+    }
+    .conteudo1.segundaparte{
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+    }
+    .fundo1 {
+        background-color: #ffffff;
+        width: 95%;
+        margin: 4vh auto;
+        height: 30vh;
+        border: 3px solid #000000;
+        border-radius: 14px;
+    }

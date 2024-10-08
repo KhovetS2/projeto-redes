@@ -1,0 +1,111 @@
+{% extends 'base.html'%}
+{%block title%}Atualizar Chamado{% endblock %}
+{% block content %}
+
+
+{% if current_user.is_authenticated %}
+<form action="/ver_mais/{{chamado.id}}" method="POST" class="container">
+
+    <div class="att-display-input">
+        <div>
+            <label for="lab" form="form-label">
+                <h3 style="color: black; display: inline;">Laboratório:</h3>
+            </label>
+            <br>
+            <input type="text" id="lab" name="lab" value="{{comp.Object_lab}}" class="att-input">
+        </div>
+
+
+
+        <div>
+            <label for="comp" form="form-label">
+                <h3 style="color: black;">Computador:</h3>
+            </label>
+            <br>
+            <input type="text" id="comp" name="comp" value="{{comp.Object_compname}}" class="att-input">
+        </div>
+
+
+
+        <div>
+            <label for="problem_type" form="form-label">
+                <h3 style="color: black;">Problema:</h3>
+            </label>
+            <br>
+            <input type="text" id="problem_type" name="problem" value="{{chamado.Problem}}" class="att-input">
+        </div>
+
+        <div>
+            <label for="status" form="form-label">
+                <h3 style="color: black;">Status:</h3>
+            </label>
+            <br>
+            <select type="text" id="status" name="status" class="att-input">
+                <option value="{{chamado.Status}}" selected></option>
+                <option value="Pendente">Pendente</option>
+                <option value="Em andamento">Em andamento</option>
+                <option value="Finalizado">Finalizado</option>
+                <option value="Cancelado">Cancelado</option>
+            </select>
+        </div>
+
+        
+        <div>
+                <label for="description" form="form-label">
+                    <h3 style="color: black;">Descrição:</h3>
+                </label>
+                <br>
+                <textarea id="description" name="description" class="att-description">{{chamado.Description}}
+                </textarea>
+        </div>
+        
+        <div>
+            <p>
+                <input type="submit" id="Enviar" value="Enviar" class="att-enviar">
+            </p>
+        </div>
+        
+    </div>
+</form>
+
+{% else %}
+<section class="container">
+
+    <div class="att-display-input">
+        <div class="usuario">
+                <h3 style="color: black;">Laboratório:</h3>
+            <div type="text" id="problem_type" name="problem" class="att-input">{{comp.Object_lab}}</div>
+        </div>
+        
+        
+        
+        <div class="usuario">
+                <h3 style="color: black;">Computador:</h3>
+            <div type="text" id="problem_type" name="problem" class="att-input">{{comp.Object_compname}}</div>
+        </div>
+        
+        
+        
+        <div class="usuario">
+                <h3 style="color: black;">Problema:</h3>
+            <div type="text" id="problem_type" name="problem" class="att-input">{{chamado.Problem}}</div>
+        </div>
+    
+        <div class="usuario">
+                <h3 style="color: black;">Status:</h3>
+            <div type="text" id="problem_type" name="problem" class="att-input">{{chamado.Status}}</div>
+        </div> 
+</div>
+    <div class="centraliza_description">
+        <div class="usuario">
+            <label for="description" form="form-label">
+                <h3 style="color: black;">Descrição:</h3>
+            </label>
+            <div type="text" id="problem_type" name="problem" class="att-description">{{chamado.Description}}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endif %}
+{% endblock %}

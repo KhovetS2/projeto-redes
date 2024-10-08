@@ -1,0 +1,161 @@
+.central {
+    width: 80vw;
+    margin-top: 100px;
+    background-color: #E4E1E1;
+    margin: 10vh auto;
+    border: black solid 3px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter .att-input {
+    height: 4vh;
+    margin: 0 2vh;
+    padding: 0.1rem 1.2rem
+}
+
+.filter .att-enviar {
+    height: 4vh;
+    margin: 0 2vh;
+    font-size: medium;
+    padding: 0.1rem 1.2rem;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 13px;
+    border: 0;
+}
+
+.updt {
+    background-color: #6BE579;
+}
+
+.updt:hover {
+    opacity: 50%;
+    ;
+}
+
+.del {
+    background-color: #F85252;
+}
+
+.del:hover {
+    opacity: 50%;
+    ;
+}
+
+.bi {
+    margin: 0%;
+}
+
+.central h1 {
+    margin: 20px;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+thead {
+    background-color: #FF9999;
+}
+
+tbody {
+    background: #FFE3E3;
+}
+
+tr {
+    border-radius: 10;
+}
+
+
+
+
+
+/* Testes de card */
+
+.l-cards {
+    display: grid;
+    grid-gap: 30px;
+    /* grid-template-columns: repeat(3, 300px); */
+    /* grid-template-columns: repeat(auto-fit, 300px); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+}
+
+.c-card {
+    background-color: rgb(219, 191, 191);
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 250px;
+    border-left: 3px solid red
+}
+
+.card-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card-vermais {
+    font-size: 20px;
+    background-color: rgb(97, 204, 55);
+    border-radius: 8px;
+}
+
+.card-vermais:hover {
+    background-color: rgb(77, 161, 43);
+}
+
+.card-vermais:hover {
+    color: white;
+
+}
+
+.card-info {
+    font-size: 20px;
+    background-color: rgb(255, 118, 118);
+    border-radius: 8px;
+}
+
+.table {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    width: 90%;
+    margin: 30px 0;
+}
+
+.chart {
+    margin: 2vh 0vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1280px;
+    height: 40vh;
+    padding: 2rem 36rem 2rem 1rem;
+}
+
+.porta-grafico{
+    display: flex;
+    border: 0.2rem solid black; 
+    border-radius: 1rem; 
+    width:fit-content; 
+    height:75vh; 
+    background-color: #e4e1e1;
+    margin: 2vw auto;
+    padding: 0; 
+    padding-right: 4vw;
+}

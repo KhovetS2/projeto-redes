@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{%block title%}TECHELP - Cadastro de Técnico{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/cadastrar.css')}}">
+    <div class="bordacadastro">
+        <h1 class="h1cadastro">Você é um técnico autorizado? Cadastre-se aqui</h1>
+        <form action="" method="post">
+            <label for="" class="inpcadastro name">Seu nome:</label>
+            <br><input class="inp inp-name" type="text" name="name" placeholder="Digite seu nome">
+
+            <br><label for="" class="inpcadastro email">E-mail:</label>
+            <br><input class="inp inp-email" type="email" name="email" placeholder="Digite seu e-mail">
+
+            <br><label for="" class="inpcadastro senha">Senha:</label>
+            <br><input class="inp inp-senha" type="password" name="password" placeholder="Sua senha"> 
+            
+            <br><input class="inpsub" type="submit" value="Cadastrar">
+        </form>
+    </div>
+
+
+{% endblock %}
