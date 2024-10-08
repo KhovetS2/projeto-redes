@@ -1,12 +1,10 @@
 services:
-    backend:
+  backend:
     build:
       context: backend
       target: builder
     restart: always
     command: ["flask", "run"]
-    secrets:
-      - db-password
     ports:
       - 8000:8000
     networks:
