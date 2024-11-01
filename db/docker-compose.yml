@@ -1,0 +1,17 @@
+services:
+  db:
+    image: mysql
+    restart: always
+    networks:
+      - backnet
+    environment:
+      - MYSQL_DATABASE=api
+      - MYSQL_ROOT_PASSWORD=teste
+      - MYSQL_USER=fatec
+      - MYSQL_PASSWORD=teste
+    ports:
+      - 3306:3306
+      - 33060
+
+networks:
+  backnet:
