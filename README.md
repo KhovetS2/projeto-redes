@@ -33,6 +33,8 @@ chmod +x script-docker.sh
 
 vim backend/config.py
 
+vim backend/app/controllers/conection.py
+
 sudo docker compose up -d
 
 ## Proxy reverso e Load Balance
