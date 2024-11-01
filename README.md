@@ -45,4 +45,12 @@ git --version
 
 git clone https://github.com/KhovetS2/projeto-redes.git
 
-sudo cp projeto-redes/proxy.conf /etc/nginx/conf.d/
+sudo cp proxy/loadbalance.conf /etc/nginx/conf.d/
+
+sudo rm /etc/nginx/sites-available/default 
+
+sudo cp proxy/default /etc/nginx/sites-available/
+
+sudo nginx -t
+
+sudo nginx -s reload
